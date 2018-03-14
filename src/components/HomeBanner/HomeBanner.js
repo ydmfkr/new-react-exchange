@@ -30,7 +30,7 @@ const HomeBanner = (props) => {
                 DE-EXG
             </h1>
             <h1 className="HomeBanner">
-                The most Advanced Decentralized Cryptocurrecy Exchange
+                The most Advanced Decentralized Crypto-Currency Exchange
 
             </h1>
             <Button

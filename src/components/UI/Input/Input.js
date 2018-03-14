@@ -3,14 +3,13 @@ import './Input.css'
 
 const Input = (props) => {
 
-    let inputElement = null;
-
+    let inputElement = null
     switch (props.inputType) {
 
         case 'input':
             inputElement =
                 <input
-                    className="InputElement"
+                    className={["InputElement", props.inputElementType].join(' ')}
                     {...props.elementConfig}
                     onChange={props.onChange}
                     value={props.value}
@@ -18,18 +17,17 @@ const Input = (props) => {
             break;
         case 'textarea':
             inputElement =
-                <input
+                <textarea
                     className="InputElement"
                     {...props.elementConfig}
                     onChange={props.onChange}
-                    onBlur={props.onFocusOut}
                     value={props.value}
                 />
             break;
         default:
             inputElement =
                 <input
-                    className="InputElement"
+                    className={["InputElement", props.inputElementType].join(' ')}
                     {...props.elementConfig}
                     onChange={props.onChange}
                     value={props.value}
@@ -41,6 +39,7 @@ const Input = (props) => {
         <div className="Input">
             <label className="Label">{props.label}</label>
             {inputElement}
+            <label className="BottomLabel">{props.bottomLabel}</label>
         </div>
     )
 }

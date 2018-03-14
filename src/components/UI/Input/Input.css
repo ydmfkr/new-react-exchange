@@ -17,6 +17,13 @@
     margin-top: 0;
 }
 
+.BottomLabel{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: indianred;
+}
+
 .InputElement {
     outline: none;
     background-color: aliceblue;
@@ -33,3 +40,29 @@
     background-color: #ccc;
 }
 
+.Success {
+    background-color: #5C9210;
+    color: black;
+}
+
+.Success:focus {
+    background-color: #5C9210;
+    color: black;
+
+}
+
+.Failure {
+    background-color: #e95561;
+    color: black;
+
+}
+
+.Failure:focus {
+    background-color: #e95561;
+    color: black;
+
+}
+
+.Default {
+    background-color: aliceblue;
+}
