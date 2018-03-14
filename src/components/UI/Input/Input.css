@@ -1,0 +1,35 @@
+.Input {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.Label {
+
+    font-weight: bold;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.Label:first-of-type {
+    margin-top: 0;
+}
+
+.InputElement {
+    outline: none;
+    background-color: aliceblue;
+    font: inherit;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
